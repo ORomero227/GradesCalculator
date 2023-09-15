@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
 	Inherits System.Windows.Forms.Form
 
 	'Form overrides dispose to clean up the component list.
-	<System.Diagnostics.DebuggerNonUserCode()> _
+	<System.Diagnostics.DebuggerNonUserCode()>
 	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 		Try
 			If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,15 @@ Partial Class Form1
 	'NOTE: The following procedure is required by the Windows Form Designer
 	'It can be modified using the Windows Form Designer.  
 	'Do not modify it using the code editor.
-	<System.Diagnostics.DebuggerStepThrough()> _
+	<System.Diagnostics.DebuggerStepThrough()>
 	Private Sub InitializeComponent()
 		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
 		Me.GroupBox1 = New System.Windows.Forms.GroupBox()
 		Me.btnCalcular = New System.Windows.Forms.Button()
-		Me.inputNota4 = New System.Windows.Forms.TextBox()
-		Me.inputNota3 = New System.Windows.Forms.TextBox()
-		Me.inputNota2 = New System.Windows.Forms.TextBox()
-		Me.inputNota1 = New System.Windows.Forms.TextBox()
+		Me.txtNota4 = New System.Windows.Forms.TextBox()
+		Me.txtNota3 = New System.Windows.Forms.TextBox()
+		Me.txtNota2 = New System.Windows.Forms.TextBox()
+		Me.txtNota1 = New System.Windows.Forms.TextBox()
 		Me.inputNumEstudiante = New System.Windows.Forms.TextBox()
 		Me.inputApellidos = New System.Windows.Forms.TextBox()
 		Me.inputNombre = New System.Windows.Forms.TextBox()
@@ -41,7 +41,7 @@ Partial Class Form1
 		Me.Label2 = New System.Windows.Forms.Label()
 		Me.Label1 = New System.Windows.Forms.Label()
 		Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-		Me.lblEstado = New System.Windows.Forms.Label()
+		Me.lblMensaje = New System.Windows.Forms.Label()
 		Me.lblNotaFinal = New System.Windows.Forms.Label()
 		Me.lblPromedio = New System.Windows.Forms.Label()
 		Me.Label11 = New System.Windows.Forms.Label()
@@ -62,10 +62,10 @@ Partial Class Form1
 		'
 		Me.GroupBox1.BackColor = System.Drawing.Color.DarkOrange
 		Me.GroupBox1.Controls.Add(Me.btnCalcular)
-		Me.GroupBox1.Controls.Add(Me.inputNota4)
-		Me.GroupBox1.Controls.Add(Me.inputNota3)
-		Me.GroupBox1.Controls.Add(Me.inputNota2)
-		Me.GroupBox1.Controls.Add(Me.inputNota1)
+		Me.GroupBox1.Controls.Add(Me.txtNota4)
+		Me.GroupBox1.Controls.Add(Me.txtNota3)
+		Me.GroupBox1.Controls.Add(Me.txtNota2)
+		Me.GroupBox1.Controls.Add(Me.txtNota1)
 		Me.GroupBox1.Controls.Add(Me.inputNumEstudiante)
 		Me.GroupBox1.Controls.Add(Me.inputApellidos)
 		Me.GroupBox1.Controls.Add(Me.inputNombre)
@@ -89,62 +89,62 @@ Partial Class Form1
 		'btnCalcular
 		'
 		Me.btnCalcular.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
-		Me.btnCalcular.Location = New System.Drawing.Point(391, 189)
+		Me.btnCalcular.Location = New System.Drawing.Point(391, 194)
 		Me.btnCalcular.Name = "btnCalcular"
-		Me.btnCalcular.Size = New System.Drawing.Size(187, 48)
+		Me.btnCalcular.Size = New System.Drawing.Size(229, 48)
 		Me.btnCalcular.TabIndex = 16
 		Me.btnCalcular.Text = "Calcular"
 		Me.btnCalcular.UseVisualStyleBackColor = True
 		'
-		'inputNota4
+		'txtNota4
 		'
-		Me.inputNota4.Location = New System.Drawing.Point(841, 100)
-		Me.inputNota4.Name = "inputNota4"
-		Me.inputNota4.Size = New System.Drawing.Size(71, 27)
-		Me.inputNota4.TabIndex = 15
-		Me.inputNota4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+		Me.txtNota4.Location = New System.Drawing.Point(871, 102)
+		Me.txtNota4.Name = "txtNota4"
+		Me.txtNota4.Size = New System.Drawing.Size(71, 27)
+		Me.txtNota4.TabIndex = 15
+		Me.txtNota4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 		'
-		'inputNota3
+		'txtNota3
 		'
-		Me.inputNota3.Location = New System.Drawing.Point(738, 99)
-		Me.inputNota3.Name = "inputNota3"
-		Me.inputNota3.Size = New System.Drawing.Size(71, 27)
-		Me.inputNota3.TabIndex = 14
-		Me.inputNota3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+		Me.txtNota3.Location = New System.Drawing.Point(768, 101)
+		Me.txtNota3.Name = "txtNota3"
+		Me.txtNota3.Size = New System.Drawing.Size(71, 27)
+		Me.txtNota3.TabIndex = 14
+		Me.txtNota3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 		'
-		'inputNota2
+		'txtNota2
 		'
-		Me.inputNota2.Location = New System.Drawing.Point(638, 98)
-		Me.inputNota2.Name = "inputNota2"
-		Me.inputNota2.Size = New System.Drawing.Size(71, 27)
-		Me.inputNota2.TabIndex = 13
-		Me.inputNota2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+		Me.txtNota2.Location = New System.Drawing.Point(668, 100)
+		Me.txtNota2.Name = "txtNota2"
+		Me.txtNota2.Size = New System.Drawing.Size(71, 27)
+		Me.txtNota2.TabIndex = 13
+		Me.txtNota2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 		'
-		'inputNota1
+		'txtNota1
 		'
-		Me.inputNota1.Location = New System.Drawing.Point(535, 99)
-		Me.inputNota1.Name = "inputNota1"
-		Me.inputNota1.Size = New System.Drawing.Size(69, 27)
-		Me.inputNota1.TabIndex = 12
-		Me.inputNota1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+		Me.txtNota1.Location = New System.Drawing.Point(565, 101)
+		Me.txtNota1.Name = "txtNota1"
+		Me.txtNota1.Size = New System.Drawing.Size(69, 27)
+		Me.txtNota1.TabIndex = 12
+		Me.txtNota1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
 		'
 		'inputNumEstudiante
 		'
-		Me.inputNumEstudiante.Location = New System.Drawing.Point(254, 125)
+		Me.inputNumEstudiante.Location = New System.Drawing.Point(254, 138)
 		Me.inputNumEstudiante.Name = "inputNumEstudiante"
 		Me.inputNumEstudiante.Size = New System.Drawing.Size(178, 27)
 		Me.inputNumEstudiante.TabIndex = 11
 		'
 		'inputApellidos
 		'
-		Me.inputApellidos.Location = New System.Drawing.Point(254, 84)
+		Me.inputApellidos.Location = New System.Drawing.Point(254, 97)
 		Me.inputApellidos.Name = "inputApellidos"
 		Me.inputApellidos.Size = New System.Drawing.Size(178, 27)
 		Me.inputApellidos.TabIndex = 10
 		'
 		'inputNombre
 		'
-		Me.inputNombre.Location = New System.Drawing.Point(254, 46)
+		Me.inputNombre.Location = New System.Drawing.Point(254, 59)
 		Me.inputNombre.Name = "inputNombre"
 		Me.inputNombre.Size = New System.Drawing.Size(178, 27)
 		Me.inputNombre.TabIndex = 9
@@ -152,7 +152,7 @@ Partial Class Form1
 		'Label9
 		'
 		Me.Label9.AutoSize = True
-		Me.Label9.Location = New System.Drawing.Point(840, 65)
+		Me.Label9.Location = New System.Drawing.Point(870, 67)
 		Me.Label9.Name = "Label9"
 		Me.Label9.Size = New System.Drawing.Size(65, 19)
 		Me.Label9.TabIndex = 8
@@ -161,7 +161,7 @@ Partial Class Form1
 		'Label8
 		'
 		Me.Label8.AutoSize = True
-		Me.Label8.Location = New System.Drawing.Point(736, 65)
+		Me.Label8.Location = New System.Drawing.Point(766, 67)
 		Me.Label8.Name = "Label8"
 		Me.Label8.Size = New System.Drawing.Size(65, 19)
 		Me.Label8.TabIndex = 7
@@ -170,7 +170,7 @@ Partial Class Form1
 		'Label7
 		'
 		Me.Label7.AutoSize = True
-		Me.Label7.Location = New System.Drawing.Point(637, 65)
+		Me.Label7.Location = New System.Drawing.Point(667, 67)
 		Me.Label7.Name = "Label7"
 		Me.Label7.Size = New System.Drawing.Size(65, 19)
 		Me.Label7.TabIndex = 6
@@ -179,7 +179,7 @@ Partial Class Form1
 		'Label6
 		'
 		Me.Label6.AutoSize = True
-		Me.Label6.Location = New System.Drawing.Point(532, 65)
+		Me.Label6.Location = New System.Drawing.Point(562, 67)
 		Me.Label6.Name = "Label6"
 		Me.Label6.Size = New System.Drawing.Size(65, 19)
 		Me.Label6.TabIndex = 5
@@ -188,7 +188,7 @@ Partial Class Form1
 		'Label5
 		'
 		Me.Label5.AutoSize = True
-		Me.Label5.Location = New System.Drawing.Point(682, 23)
+		Me.Label5.Location = New System.Drawing.Point(729, 23)
 		Me.Label5.Name = "Label5"
 		Me.Label5.Size = New System.Drawing.Size(50, 19)
 		Me.Label5.TabIndex = 4
@@ -198,7 +198,7 @@ Partial Class Form1
 		'Label3
 		'
 		Me.Label3.AutoSize = True
-		Me.Label3.Location = New System.Drawing.Point(6, 131)
+		Me.Label3.Location = New System.Drawing.Point(6, 144)
 		Me.Label3.Name = "Label3"
 		Me.Label3.Size = New System.Drawing.Size(175, 19)
 		Me.Label3.TabIndex = 2
@@ -207,7 +207,7 @@ Partial Class Form1
 		'Label2
 		'
 		Me.Label2.AutoSize = True
-		Me.Label2.Location = New System.Drawing.Point(6, 87)
+		Me.Label2.Location = New System.Drawing.Point(6, 100)
 		Me.Label2.Name = "Label2"
 		Me.Label2.Size = New System.Drawing.Size(186, 19)
 		Me.Label2.TabIndex = 1
@@ -216,7 +216,7 @@ Partial Class Form1
 		'Label1
 		'
 		Me.Label1.AutoSize = True
-		Me.Label1.Location = New System.Drawing.Point(6, 49)
+		Me.Label1.Location = New System.Drawing.Point(6, 62)
 		Me.Label1.Name = "Label1"
 		Me.Label1.Size = New System.Drawing.Size(178, 19)
 		Me.Label1.TabIndex = 0
@@ -224,7 +224,7 @@ Partial Class Form1
 		'
 		'GroupBox2
 		'
-		Me.GroupBox2.Controls.Add(Me.lblEstado)
+		Me.GroupBox2.Controls.Add(Me.lblMensaje)
 		Me.GroupBox2.Controls.Add(Me.lblNotaFinal)
 		Me.GroupBox2.Controls.Add(Me.lblPromedio)
 		Me.GroupBox2.Controls.Add(Me.Label11)
@@ -244,14 +244,14 @@ Partial Class Form1
 		Me.GroupBox2.TabStop = False
 		Me.GroupBox2.Text = "Resultados"
 		'
-		'lblEstado
+		'lblMensaje
 		'
-		Me.lblEstado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-		Me.lblEstado.Location = New System.Drawing.Point(652, 122)
-		Me.lblEstado.Name = "lblEstado"
-		Me.lblEstado.Size = New System.Drawing.Size(271, 57)
-		Me.lblEstado.TabIndex = 24
-		Me.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		Me.lblMensaje.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+		Me.lblMensaje.Location = New System.Drawing.Point(652, 122)
+		Me.lblMensaje.Name = "lblMensaje"
+		Me.lblMensaje.Size = New System.Drawing.Size(271, 57)
+		Me.lblMensaje.TabIndex = 24
+		Me.lblMensaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
 		'
 		'lblNotaFinal
 		'
@@ -354,7 +354,7 @@ Partial Class Form1
 		Me.Button1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Button1.Location = New System.Drawing.Point(403, 515)
 		Me.Button1.Name = "Button1"
-		Me.Button1.Size = New System.Drawing.Size(186, 49)
+		Me.Button1.Size = New System.Drawing.Size(229, 49)
 		Me.Button1.TabIndex = 2
 		Me.Button1.Text = "Salir"
 		Me.Button1.UseVisualStyleBackColor = True
@@ -392,10 +392,10 @@ Partial Class Form1
 	Friend WithEvents Label6 As Label
 	Friend WithEvents Label5 As Label
 	Friend WithEvents btnCalcular As Button
-	Friend WithEvents inputNota4 As TextBox
-	Friend WithEvents inputNota3 As TextBox
-	Friend WithEvents inputNota2 As TextBox
-	Friend WithEvents inputNota1 As TextBox
+	Friend WithEvents txtNota4 As TextBox
+	Friend WithEvents txtNota3 As TextBox
+	Friend WithEvents txtNota2 As TextBox
+	Friend WithEvents txtNota1 As TextBox
 	Friend WithEvents GroupBox2 As GroupBox
 	Friend WithEvents lblNombreEstudiante As Label
 	Friend WithEvents Label14 As Label
@@ -408,6 +408,6 @@ Partial Class Form1
 	Friend WithEvents Label4 As Label
 	Friend WithEvents lblNumeroEstudiante As Label
 	Friend WithEvents lblApellidos As Label
-	Friend WithEvents lblEstado As Label
+	Friend WithEvents lblMensaje As Label
 	Friend WithEvents Button1 As Button
 End Class
