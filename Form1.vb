@@ -3,26 +3,26 @@
 'Programa calculadora de notas
 
 Public Class Form1
-	Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
+	Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
 
 		Const PROMEDIO As Integer = 100
 		Const CANTIDAD_NOTAS As Integer = 4
-		Dim nota1, nota2, nota3, nota4, notaFinal As Double
+		Dim grade1, grade2, grade3, grade4, finalGrade As Double
 		Dim sumaValorNotas, promedioFinal As Double
 		Dim errorEnNotas As Boolean = False
 		Dim mensajeError As String = "Una de las notas no es válida o no esta en el rango 0-100"
 
 		'Validacion de valores ingresados para las notas
 		Try
-			nota1 = CDbl(txtNota1.Text)
-			nota2 = CDbl(txtNota2.Text)
-			nota3 = CDbl(txtNota3.Text)
-			nota4 = CDbl(txtNota4.Text)
+			grade1 = CDbl(txtGrade1.Text)
+			grade2 = CDbl(txtGrade2.Text)
+			grade3 = CDbl(txtGrade3.Text)
+			grade4 = CDbl(txtGrade4.Text)
 
-			If (nota1 < 0 Or nota1 > 100) Or
-				(nota2 < 0 Or nota2 > 100) Or
-				(nota3 < 0 Or nota3 > 100) Or
-				(nota4 < 0 Or nota4 > 100) Then
+			If (grade1 < 0 Or grade1 > 100) Or
+				(grade2 < 0 Or grade2 > 100) Or
+				(grade3 < 0 Or grade3 > 100) Or
+				(grade4 < 0 Or grade4 > 100) Then
 				MessageBox.Show(mensajeError)
 				errorEnNotas = True
 			End If
@@ -33,41 +33,41 @@ Public Class Form1
 
 		If errorEnNotas = False Then
 			'Sumar todas las notas
-			sumaValorNotas = nota1 + nota2 + nota3 + nota4
+			sumaValorNotas = grade1 + grade2 + grade3 + grade4
 			'Cálculo para la nota final
-			notaFinal = sumaValorNotas / CANTIDAD_NOTAS
+			finalGrade = sumaValorNotas / CANTIDAD_NOTAS
 			'Cálculo para el promedio
 			promedioFinal = sumaValorNotas / PROMEDIO
 
 			'Asignar la letra correspondiente al promedio
-			Select Case notaFinal
+			Select Case finalGrade
 				Case 90 To 100
-					lblNotaFinal.Text = notaFinal.ToString("n2") + "% -  A"
+					lblFinalGrade.Text = finalGrade.ToString("n2") + "% -  A"
 				Case 80 To 89
-					lblNotaFinal.Text = notaFinal.ToString("n2") + "% -  B"
+					lblFinalGrade.Text = finalGrade.ToString("n2") + "% -  B"
 				Case 70 To 79
-					lblNotaFinal.Text = notaFinal.ToString("n2") + "% -  C"
+					lblFinalGrade.Text = finalGrade.ToString("n2") + "% -  C"
 				Case 60 To 69
-					lblNotaFinal.Text = notaFinal.ToString("n2") + "% -  D"
+					lblFinalGrade.Text = finalGrade.ToString("n2") + "% -  D"
 				Case <= 59
-					lblNotaFinal.Text = notaFinal.ToString("n2") + "% -  F"
+					lblFinalGrade.Text = finalGrade.ToString("n2") + "% -  F"
 			End Select
 
 			'Asignar el promedio al label
-			lblPromedio.Text = promedioFinal.ToString("n2")
+			lblGPA.Text = promedioFinal.ToString("n2")
 
 			'Mensaje de aprobacion
-			Select Case notaFinal
+			Select Case finalGrade
 				Case >= 95
-					lblMensaje.Text = "Estudiante de honor"
+					lblMessage.Text = "Course passed with success!"
 				Case Else
-					lblMensaje.Text = "Necesita tomar un curso en verano"
+					lblMessage.Text = "You'll need to take the course again"
 			End Select
 
 			'Informacion del estudiante
-			lblNombreEstudiante.Text = inputNombre.Text
-			lblApellidos.Text = inputApellidos.Text
-			lblNumeroEstudiante.Text = inputNumEstudiante.Text
+			lblStudentName.Text = txtStudentName.Text
+			lblStudentLastname.Text = txtStudentLastname.Text
+			lblStudentID.Text = txtStudentID.Text
 
 			ClearInputs()
 		End If
@@ -75,17 +75,17 @@ Public Class Form1
 	End Sub
 
 	Private Sub ClearInputs()
-		inputNombre.Text = ""
-		inputApellidos.Text = ""
-		inputNumEstudiante.Text = ""
-		txtNota1.Text = ""
-		txtNota2.Text = ""
-		txtNota3.Text = ""
-		txtNota4.Text = ""
+		txtStudentName.Text = ""
+		txtStudentLastname.Text = ""
+		txtStudentID.Text = ""
+		txtGrade1.Text = ""
+		txtGrade2.Text = ""
+		txtGrade3.Text = ""
+		txtGrade4.Text = ""
 	End Sub
 
 
-	Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+	Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
 		Me.Close()
 	End Sub
 End Class
